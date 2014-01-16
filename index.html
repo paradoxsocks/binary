@@ -18,6 +18,31 @@
 
 <script scr="js/modernizr.js"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    var v = document.getElementById('v');
+    var canvas = document.getElementById('c');
+    var context = canvas.getContext('2d');
+
+    var cw = Math.floor(canvas.clientWidth / 100);
+    var ch = Math.floor(canvas.clientHeight / 100);
+    canvas.width = cw;
+    canvas.height = ch;
+
+    v.addEventListener('play', function(){
+        draw(this,context,cw,ch);
+    },false);
+
+},false);
+
+function draw(v,c,w,h) {
+    if(v.paused || v.ended) return false;
+    c.drawImage(v,0,0,w,h);
+    setTimeout(draw,20,v,c,w,h);
+}
+</script>
+
+
 <!--[if lt IE 9]>
     <script src="components/html5shiv/html5shiv.js"></script>
 <![endif]-->
@@ -85,7 +110,9 @@ if (window.FileReader && Modernizr.draganddrop) {
     		<h2>Converting to binary</h2>
 		<p>Watch the short video below to learn how to convert any number into binary.</p>
 		
-		<video id="video" width="640" height="360" controls>
+		<canvas id=c></canvas>
+
+		<video id="v" width="640" height="360" controls>
 			<source src="videos/binary.webm" type="video/webm">
 			<source src="videos/binary.ogg" type="video/ogg">
 			<source src="videos/binary.mp4" type="video/mp4">
