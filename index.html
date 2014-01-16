@@ -1,92 +1,191 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js js canvas canvastext geolocation rgba hsla no-multiplebgs borderimage borderradius boxshadow opacity no-cssanimations csscolumns no-cssgradients no-cssreflections csstransforms no-csstransforms3d no-csstransitions  video audio cufon-active fontface cufon-ready">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+<link rel="icon" type="image/png" href="images/robottrans.ico">
 
-  <title>Binary</title>
-  <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<title>KS3 Computer Science</title>
+<meta charset="utf-8" />
+<meta content="en" name="language" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script src="js/videosub-0.9.9.js"></script>
+
+<script scr="js/modernizr.js"></script>
+
+<!--[if lt IE 9]>
+    <script src="components/html5shiv/html5shiv.js"></script>
+<![endif]-->
+
+<script>
+if (window.FileReader && Modernizr.draganddrop) {
+} else {
+	alert("Sorry, your browser does not support drag and drop!");
+}
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Binary</h1>
-    </header>
-    <div id="container">
-      <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/paradoxsocks/binary/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/paradoxsocks/binary/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/paradoxsocks/binary" class="code">View Binary on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<div id="nav">
+	<div id="button"><a href="#intro" title="What is binary?">What</a></div>
+	<div id="button"><a href="#second" title="What can binary do?">How?</a></div>
+	<div id="button"><a href="#third" title="Converting to binary">Convert</a></div>
+	<div id="button"><a href="#fifth" title="Binary maths">Test</a></div>
+</div>
+	
+	<section id="title">
+	<div class="title"><h1>Computer Science for KS3</h1>
+	<h2>Binary</h2>
+	<img src="images/title.png" />
+	<p><br />Scroll down for more</p>
+	</div>
+	</section>
+	
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/paradoxsocks" class="avatar"><img src="https://0.gravatar.com/avatar/5766fc401e77385fd737303cd23f18f7?d=https%3A%2F%2Fidenticons.github.com%2F2c5819631da39e5a57e14d42905cacf6.png&amp;r=x&amp;s=60" width="48" height="48"/></a> <a href="https://github.com/paradoxsocks">paradoxsocks</a> maintains <a href="https://github.com/paradoxsocks/binary">Binary</a></p>
-
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/paradoxsocks/binary/tarball/master" class="tar">tar</a><a href="https://github.com/paradoxsocks/binary/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
+	<section id="intro">
+		<div class="container">
+	    	<div class="float-right">
+			<h2>What is binary?</h2>
+	        <p>Computers are not very clever things. All they can understand are '1' and '0' which you would think would be very limiting, right? </p>
+			<p>Wrong. Every single thing you can see on your screen right now is made up of these 1s and 0s. </p>
+			<p>Your computer (and everything else electronic!) converts everything to this language so that it can understand what it needs to do.</p>
+			<p>We call this language 'binary' and we're about to learn to convert pretty much anything to it.</p>
+			<object data="images/robot.svg" type="image/svg+xml">
+			<img src="images/robot.png" />
+			</object>
+			</div>
+	    </div> 
+	</section> <!--#intro-->
+	
+	<section id="second">
+		<div class="container">
+	    	<div class="float-left">
+	            <h2>How does binary work?</h2>
+	            				
+				<p>To understand binary you need to understand how powers work. You'll be familiar with them even if you don't know that they are powers! The decimal system, the number system you are familiar, is base 10. Each column is ten times bigger than the one before it.</p>	
+				
+				<p>Binary is base two - each column to two times bigger than the one before it.</p>
+				
+	            <p>Can you remember learning how to represent numbers in primary school? You would have a units column, a tens column, a hundreds column and so on.  </p> 
+												
+				<p>With the decimal system, a 1 in the tens column represents 1 ten. A 2 in the tens column represents 2 tens. This can increase all the way up to 9 in each column.</p>
+				
+				<p>Binary uses the same concept, except the only options in each column are 1 and 0. A 1 in the one column represents 1 one. A 1 in the two column represents two. A 1 in both a one and two column equals three as you just add the columns together.</p>
+				
+				<img src="images/binary.png" alt="This is how binary numbers work" width="462" height="351" class="center" />
+	        </div>
+	    </div> 
+	   </section> 
+	
+	<div id="third">
+		<div class="container">
+	    	<div class="float-right">
+				<h2>Converting to binary</h2>
+				<p>Watch the short video below to learn how to convert any number into binary.</p>
+			
+  <video id="binary" poster="images/screengrab.jpg" controls preload="auto">
+    <source src="videos\binary.mp4" type="video/mp4" />
+	<source src="videos\binary.webm" type="video/webm" />
+	<source src="videos\binary.ogg" type="video/ogg" />
+	<track src="videos\binary.vtt" kind="subtitles" srclang="en" label="English" default />
+  </video>
+  <p>Can't see the video? Please click <a href="http://www.youtube.com/watch?v=hPRMd-TGQSA">here</a> to view the video on YouTube instead.
   
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var v = document.createElement("video"); // Are we dealing with a browser that supports <video>?
+    if ( !v.play ) { // If no, use Flash.
+      var params = {
+        allowfullscreen: "true",
+        allowscriptaccess: "always"
+      };
+      var flashvars = {
+        file: "binary.flv",
+        image: "images/screengrab.jpg"
+      };
+      swfobject.embedSWF("player.swf", "binary", "480", "272", "9.0.0", "expressInstall.swf", flashvars, params);
+    }
+  });
+</script>
+					
+	    </div>
+	</div> 
+	
+	<!--<div id="fourth">
+		<div class="story">
+			<div class="float-left">
+				<h2>Image representation</h2>
+				
+
+				<p>You're probably wondering how on earth 1s and 0s can make up something as complex as an image. Watch the video below to get a quick explanation!</p>
+				
+				
+
+
+
+</div>
+		
+</div> <!--.story-->
+	</div> <!--#fourth-->
+	
+	<div id="fifth">
+		<div class="container">
+			<div class="float-left">
+				<h2>Now you try!</h2>
+				<p>Here's a few examples </p>  
+				
+<script>
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+<div class="box"></div>
+
+
+
+
+<p>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="images\sprite.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</p>
+<p>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="images\sprite.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25"></div>
+<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</p>	
+				drag and drop 
+			</div>
+		</div> <!--.story-->
+	</div> <!--#fifth-->
 </body>
 </html>
