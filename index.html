@@ -85,12 +85,12 @@ if (window.FileReader && Modernizr.draganddrop) {
     		<h2>Converting to binary</h2>
 		<p>Watch the short video below to learn how to convert any number into binary.</p>
 		
-		<!-- Video -->
 		<video id="video" width="640" height="360" controls>
 			<source src="videos/binary.webm" type="video/webm">
 			<source src="videos/binary.ogg" type="video/ogg">
 			<source src="videos/binary.mp4" type="video/mp4">
-			<track src="videos\mytrack.vtt" kind="subtitles" srclang="en" label="English" default />
+			<track src="videos/mytrack.vtt" kind="subtitles" srclang="en" label="English" default />
+			<video poster="images/screengrab.jpg">
 			<p>Can't see the video? Please click <a href="http://www.youtube.com/watch?v=hPRMd-TGQSA">here</a> to view the video on YouTube instead.</p>
 		</video>
 	</div>
@@ -141,7 +141,8 @@ if (window.FileReader && Modernizr.draganddrop) {
 		</script>
 
 		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-		<img src="images\sprite.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25"></div>
+		<img src="images\1.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25"></div>
+		<img src="images\0.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25"></div>
 		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 		<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 		<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
