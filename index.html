@@ -16,7 +16,19 @@
 
 <script scr="js/modernizr.js"></script>
 
-	<script src="script.js"></script>
+<script>
+function playPause(btn,vid){
+	var vid = document.getElementById(vid);
+	if(vid.paused){
+		vid.play();
+		btn.innerHTML = "Pause";
+	} else {
+		vid.pause();
+		btn.innerHTML = "Play";
+	}
+}
+</script>
+
 
 <!--[if lt IE 9]>
     <script src="components/html5shiv/html5shiv.js"></script>
@@ -90,6 +102,17 @@ if (window.FileReader && Modernizr.draganddrop) {
 				<h2>Converting to binary</h2>
 				<p>Watch the short video below to learn how to convert any number into binary.</p>
 
+
+<div id="video_player_box">
+  <video id="my_video"  width="640" height="360">
+		  <source src="videos/binary.webm" type="video/webm">
+		  <source src="videos/binary.ogg" type="video/ogg">
+		  <source src="videos/binary.mp4" type="video/mp4">
+		 <track src="videos\mytrack.vtt" kind="subtitles" srclang="en" label="English" default />  </video>
+  <div id="video_controls_bar">
+    <button id="playpausebtn" onclick="playPause(this,'my_video')">Pause</button>
+  </div>
+</div>
 
 
   	<div id="video-container">
