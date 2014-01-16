@@ -1,4 +1,3 @@
-
 body{
 	margin: 0;
 	padding: 0;
@@ -145,6 +144,7 @@ margin:0 auto;
 
 #intro{
 	background:url(images/one.jpg) no-repeat fixed;
+	background-color: #82d17e;
 	color: black;
 	height: 100%;
 	min-height:800px;
@@ -154,6 +154,7 @@ margin:0 auto;
 
 #second{
 	background: url(images/two.png) no-repeat fixed;
+	background-color: #2e768f;
 	color: white;
 	height:100%;
 	min-height: 800px;
@@ -163,6 +164,7 @@ margin:0 auto;
 
 #third{
 	background: url(images/three.jpg) no-repeat fixed;
+	background-color: #fb8a08;
 	color: black;
 	height:100%;
 	min-height: 800px;
@@ -170,17 +172,10 @@ margin:0 auto;
 	margin: 0 auto;
 }
 
-#fourth{
-	background: url(images/four.jpg) no-repeat fixed;
-	color:white;
-	height:100%;
-	min-height: 800px;
-	margin: 0 auto;
-	padding: 0;
-}
 
 #fifth {
 	background: url(images/five.jpg) no-repeat fixed;
+	background-color: #6dddf1;
 	color:black;
 	height:100%;
 	min-height: 800px;
