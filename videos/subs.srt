@@ -1,0 +1,44 @@
+
+1
+00:00:00.000 --> 00.00.03.500
+We're going to conver the number 26 to binary
+
+2
+00:00:04.000 --> 00.00.10.500
+26 is bigger than 16 so we add 1 to the 16 column
+
+3
+00:00:11.000 --> 00.00.15.000
+we then take away 16 from 26 which leaves us with 10
+
+4
+00:00:16.000 --> 00.00.20.000
+10 is bigger than 8 so we add a 1 to the 8 column
+
+5
+00:00:21.000 --> 00.00.25.000
+and then we take away 8 from 10 which leaves us with 2
+
+6
+00:00:26.000 --> 00.00.30.000
+2 is smaller than 4 so we add a 0 to the 4 column
+
+7
+00:00:31.000 --> 00.00.35.000
+2 is equal to 2 so we add a 1 to that column
+
+8
+00:00:36.000 --> 00.00.41.000
+2 minus 2 is 0 so we add a 0 to the 1 column
+
+9
+00:00:43.000 --> 00.00.45.000
+converting from binary is even easier
+
+10
+00:00:46.000 --> 00.00.50.000
+simply add the value of the columns that have 1 in them
+
+11
+00:00:51.000 --> 00.00.54.000
+so 8 + 4 + 1 = 13

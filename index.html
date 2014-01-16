@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js js canvas canvastext geolocation rgba hsla no-multiplebgs borderimage borderradius boxshadow opacity no-cssanimations csscolumns no-cssgradients no-cssreflections csstransforms no-csstransforms3d no-csstransitions  video audio cufon-active fontface cufon-ready">
+
+<head>
+
+<link rel="icon" type="image/png" href="images/robottrans.ico">
+
+
+<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<title>KS3 Computer Science</title>
+<meta charset="utf-8" />
+<meta content="en" name="language" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script src="js/videosub-0.9.9.js"></script>
+
+<script scr="js/modernizr.js"></script>
+
+<!--[if lt IE 9]>
+    <script src="components/html5shiv/html5shiv.js"></script>
+<![endif]-->
+
+<script>
+if (window.FileReader && Modernizr.draganddrop) {
+} else {
+	alert("Sorry, your browser does not support drag and drop!");
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="nav">
+	<div id="button"><a href="#intro" title="What is binary?">What</a></div>
+	<div id="button"><a href="#second" title="What can binary do?">How?</a></div>
+	<div id="button"><a href="#third" title="Converting to binary">Convert</a></div>
+	<div id="button"><a href="#fifth" title="Binary maths">Test</a></div>
+</div>
+	
+	<section id="title">
+	<div class="title"><h1>Computer Science for KS3</h1>
+	<h2>Binary</h2>
+	<img src="images/title.png" />
+	<p><br />Scroll down for more</p>
+	</div>
+	</section>
+	
+
+	<section id="intro">
+		<div class="container">
+	    	<div class="float-right">
+			<h2>What is binary?</h2>
+	        <p>Computers are not very clever things. All they can understand are '1' and '0' which you would think would be very limiting, right? </p>
+			<p>Wrong. Every single thing you can see on your screen right now is made up of these 1s and 0s. </p>
+			<p>Your computer (and everything else electronic!) converts everything to this language so that it can understand what it needs to do.</p>
+			<p>We call this language 'binary' and we're about to learn to convert pretty much anything to it.</p>
+			<object data="images/robot.svg" type="image/svg+xml">
+			<img src="images/robot.png" />
+			</object>
+			</div>
+	    </div> 
+	</section> <!--#intro-->
+	
+	<section id="second">
+		<div class="container">
+	    	<div class="float-left">
+	            <h2>How does binary work?</h2>
+	            				
+				<p>To understand binary you need to understand how powers work. You'll be familiar with them even if you don't know that they are powers! The decimal system, the number system you are familiar, is base 10. Each column is ten times bigger than the one before it.</p>	
+				
+				<p>Binary is base two - each column to two times bigger than the one before it.</p>
+				
+	            <p>Can you remember learning how to represent numbers in primary school? You would have a units column, a tens column, a hundreds column and so on.  </p> 
+												
+				<p>With the decimal system, a 1 in the tens column represents 1 ten. A 2 in the tens column represents 2 tens. This can increase all the way up to 9 in each column.</p>
+				
+				<p>Binary uses the same concept, except the only options in each column are 1 and 0. A 1 in the one column represents 1 one. A 1 in the two column represents two. A 1 in both a one and two column equals three as you just add the columns together.</p>
+				
+				<img src="images/binary.png" alt="This is how binary numbers work" width="462" height="351" class="center" />
+	        </div>
+	    </div> 
+	   </section> 
+	
+	<div id="third">
+		<div class="container">
+	    	<div class="float-right">
+				<h2>Converting to binary</h2>
+				<p>Watch the short video below to learn how to convert any number into binary.</p>
+			
+  <video id="binary" poster="images/screengrab.jpg" controls preload="auto">
+    <source src="videos\binary.mp4" type="video/mp4" />
+	<source src="videos\binary.webm" type="video/webm" />
+	<source src="videos\binary.ogg" type="video/ogg" />
+	<track src="videos\binary.vtt" kind="subtitles" srclang="en" label="English" default />
+  </video>
+  <p>Can't see the video? Please click <a href="http://www.youtube.com/watch?v=hPRMd-TGQSA">here</a> to view the video on YouTube instead.
+  
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var v = document.createElement("video"); // Are we dealing with a browser that supports <video>?
+    if ( !v.play ) { // If no, use Flash.
+      var params = {
+        allowfullscreen: "true",
+        allowscriptaccess: "always"
+      };
+      var flashvars = {
+        file: "binary.flv",
+        image: "images/screengrab.jpg"
+      };
+      swfobject.embedSWF("player.swf", "binary", "480", "272", "9.0.0", "expressInstall.swf", flashvars, params);
+    }
+  });
+</script>
+					
+	    </div>
+	</div> 
+	
+	<!--<div id="fourth">
+		<div class="story">
+			<div class="float-left">
+				<h2>Image representation</h2>
+				
+
+				<p>You're probably wondering how on earth 1s and 0s can make up something as complex as an image. Watch the video below to get a quick explanation!</p>
+				
+				
+
+
+
+</div>
+		
+</div> <!--.story-->
+	</div> <!--#fourth-->
+	
+	<div id="fifth">
+		<div class="container">
+			<div class="float-left">
+				<h2>Now you try!</h2>
+				<p>Here's a few examples </p>  
+				
+<script>
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+<div class="box"></div>
+
+
+
+
+<p>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="images\sprite.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</p>
+<p>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img src="images\sprite.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25"></div>
+<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</p>	
+				drag and drop 
+			</div>
+		</div> <!--.story-->
+	</div> <!--#fifth-->
+</body>
+</html>
