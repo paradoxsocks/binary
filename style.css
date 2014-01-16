@@ -195,8 +195,7 @@ h2, h3 {
 .background {
    width: 600px;
    height: 337px;
-   padding: 15px;
-   border: 2px solid white;
+   padding: 10px;
    background: #2e768f;
    
 }
