@@ -58,54 +58,54 @@ h2, h3 {
 }
 
 #navbutton {
-background-color: black;
-font-family: 'Raleway', Arial, sans-serif;
-text-transform:uppercase;
-font-weight:bold;
-width:95px;
-transition:transform 1s;
--webkit-transition:transform 1s;
-margin-bottom:2px;
-padding:5px;
-text-align:center;
+	background-color: black;
+	font-family: 'Raleway', Arial, sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;
+	width:95px;
+	transition:transform 1s;
+	-webkit-transition:transform 1s;
+	margin-bottom:2px;
+	padding:5px;
+	text-align:center;
 }
 
 #navbutton a {
-color:white;
-text-decoration:none;
-transition:transform 1s;
--webkit-transition:transform 1s;
+	color:white;
+	text-decoration:none;
+	transition:transform 1s;
+	-webkit-transition:transform 1s;
 }
 
 #navbutton:hover {
-background-color:white;
--webkit-transition: background-color 1s linear;
-transition: background-color 1s linear;
+	background-color:white;
+	-webkit-transition: background-color 1s linear;
+	transition: background-color 1s linear;
 }
 
 #navbutton a:hover {
--webkit-transition: color 1s linear;
-transition: color 1s linear;
-color:black;
+	-webkit-transition: color 1s linear;
+	transition: color 1s linear;
+	color:black;
 }
 
 /*title*/
 
 #title {
-color:white;
-background-color:#505b61;
-height:100%;
-width:100%;
-margin: 0 auto;
-padding: 0;
-position:relative;
-top:0;
-text-align:center;
+	color:white;
+	background-color:#505b61;
+	height:100%;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	position:relative;
+	top:0;
+	text-align:center;
 }
 
 #title .title {
-width:50%;
-margin:0 auto;
+	width:50%;
+	margin:0 auto;
 }
 
 #title .title img {
@@ -196,7 +196,7 @@ margin:0 auto;
    width: 600px;
    height: 337px;
    padding: 15px;
-   border: 2px solid black;
-   background: gray;
+   border: 2px solid white;
+   background: #fb8a08;
    
 }
