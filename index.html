@@ -91,27 +91,31 @@ if (window.FileReader && Modernizr.draganddrop) {
 				<p>Watch the short video below to learn how to convert any number into binary.</p>
 
 
-<div id="video-container">
-			
-  <video id="binary" poster="images/screengrab.jpg" width="640" height="360">
-    <source src="videos\binary.mp4" type="video/mp4" />
-	<source src="videos\binary.webm" type="video/webm" />
-	<source src="videos\binary.ogg" type="video/ogg" />
-	<track src="videos\mytrack.vtt" kind="subtitles" srclang="en" label="English" default />
-  </video>
-    <!-- Video Controls -->
-  <div id="video-controls">
-    <button type="button" id="play-pause">Play</button>
-    <input type="range" id="seek-bar" value="0">
-    <button type="button" id="mute">Mute</button>
-    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-  </div>
-</div>
-  <script src="js/script.js"></script>
+
+  	<div id="video-container">
+		<!-- Video -->
+		<video id="video" width="640" height="360">
+		  <source src="videos/binary.webm" type="video/webm">
+		  <source src="videos/binary.ogg" type="video/ogg">
+		  <source src="videos/binary.mp4" type="video/mp4">
+		 <track src="videos\mytrack.vtt" kind="subtitles" srclang="en" label="English" default />
+
+		  <p>
+		    Your browser doesn't support HTML5 video.
+		    <a href="videos/mikethefrog.mp4">Download</a> the video instead.
+		    <p>Can't see the video? Please click <a href="http://www.youtube.com/watch?v=hPRMd-TGQSA">here</a> to view the video on YouTube instead.
+</p>
+		</video>
+		<!-- Video Controls -->
+		<div id="video-controls">
+			<button type="button" id="play-pause" class="play">Play</button>
+			<input type="range" id="seek-bar" value="0">
+			<button type="button" id="mute">Mute</button>
+			<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+			<button type="button" id="full-screen">Full-Screen</button>
+		</div>
+	</div>
   
-  <p>Can't see the video? Please click <a href="http://www.youtube.com/watch?v=hPRMd-TGQSA">here</a> to view the video on YouTube instead.
-  
-</div>
 
 <script type="text/javascript">
   $(document).ready(function() {
