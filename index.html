@@ -33,14 +33,15 @@ function EvalSound(soundobj) {
 
 	function drag(ev) {
 		ev.dataTransfer.setData("Text",ev.target.id);
-		ev.dataTransfer.effectAllowed = "copy";
-
 	}
 
 	function drop(ev) {
-		ev.preventDefault();
-		var data=ev.dataTransfer.getData("Text");
-		ev.target.appendChild(document.getElementById(data));
+            ev.preventDefault();
+            var data=ev.dataTransfer.getData("Text");
+            var copyimg = document.createElement("img");
+            var original = document.getElementById(data);
+            copyimg.src = original.src;
+            ev.target.appendChild(copyimg);
 	}
 </script>
 
