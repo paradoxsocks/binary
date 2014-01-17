@@ -33,6 +33,8 @@ function EvalSound(soundobj) {
 
 	function drag(ev) {
 		ev.dataTransfer.setData("Text",ev.target.id);
+		ev.dataTransfer.effectAllowed = "copy";
+
 	}
 
 	function drop(ev) {
