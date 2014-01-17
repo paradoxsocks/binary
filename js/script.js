@@ -95,4 +95,8 @@ window.onload = function() {
 		// Update the video volume
 		video.volume = volumeBar.value;
 	});
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 011fd0b2f2aff55b3e0a5d99ab9e7865dfe85b55
