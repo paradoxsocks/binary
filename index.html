@@ -18,6 +18,23 @@
 
 <script scr="js/modernizr.js"></script>
 
+		
+<script>
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+
+	function drag(ev) {
+		ev.dataTransfer.setData("Text",ev.target.id);
+	}
+
+	function drop(ev) {
+		ev.preventDefault();
+		var data=ev.dataTransfer.getData("Text");
+		ev.target.appendChild(document.getElementById(data));
+	}
+</script>
+
 <!--[if lt IE 9]>
     <script src="components/html5shiv/html5shiv.js"></script>
 <![endif]-->
@@ -129,24 +146,8 @@ if (window.FileReader && Modernizr.draganddrop) {
 	<div class="float-left">
 		<h2>Now you try!</h2>
 		<p>Here's a few examples </p>
-		
-		<script>
-			function allowDrop(ev) {
-				ev.preventDefault();
-			}
-	
-			function drag(ev) {
-				ev.dataTransfer.setData("Text",ev.target.id);
-			}
-	
-			function drop(ev) {
-				ev.preventDefault();
-				var data=ev.dataTransfer.getData("Text");
-				ev.target.appendChild(document.getElementById(data));
-			}
-		</script>
+
 		<p>
-		
 		<center>
 		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
 		<img src="images\0.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25" /></div>
@@ -162,6 +163,7 @@ if (window.FileReader && Modernizr.draganddrop) {
 		
 		<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 		</p>
+		
 		</div> 
 		</center>
 	</div> 
