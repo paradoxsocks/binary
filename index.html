@@ -83,8 +83,7 @@ if (window.FileReader && Modernizr.draganddrop) {
 		<p>Your computer (and everything else electronic!) converts everything to this language so that it can understand what it needs to do.</p>
 		<p>If a robot said 'Hello' to you in its own language it'd sound like this:'
 		</p>
-		
-		<p>
+
 		
 		<audio id="audio">
 		  <source src="audio/binary.mp3" type="audio/mpeg" />
@@ -111,15 +110,14 @@ if (window.FileReader && Modernizr.draganddrop) {
 		<script>
 		  if (document.createElement('audio').canPlayType) {
 		    if (!document.createElement('audio').canPlayType('audio/mpeg')) {
-		      ... SWFObject script lines here ...
+
 		    } else { // HTML5 audio + mp3 support
 		      document.getElementById('player').style.display = 'block';
 		    }
 		  }
 		  </script>
 
-			
-		</p>
+
 		
 		<p>We call this language 'binary' and we're about to learn to convert pretty much anything to it.</p>
 		<object data="images/robot.svg" type="image/svg+xml" width="330" height="375">
